@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Zagadeczka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Zagadka na 18</h1>
+    <section>
+      <div class="form-box">
+        <div class="form-group">
+          <label for="answer">Odpowiedź:</label>
+          <input type="text" id="answer" name="answer">
+        </div>
+        <button type="button" onclick="checkAnswer()">Sprawdź odpowiedź</button>
+        <p id="result"></p>
+        <iframe src="https://www.youtube.com/embed/Pc0CxmFlabw" title="Zagadka" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+
+
+
+    <script>
+      function checkAnswer() {
+        const answer = document.getElementById("answer").value.toLowerCase();
+
+        fetch("xyz.json")
+          .then(response => response.json())
+          .then(data => {
+            if (data["koza"]["answer"] === answer) {
+              window.location.href = data["koza"]["page"];
+            } else {
+              document.getElementById('result').innerHTML = 'Źle!';
+            }
+          });
+      }
+    </script>
+  </body>
+</html>

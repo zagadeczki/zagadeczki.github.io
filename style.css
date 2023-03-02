@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+
+/* Stylowanie strony */
+body {
+  background: url('background6.jpg')no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1{
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+
+.form-box{
+  position: relative;
+  width: 75vw;
+  height: 90vh;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+iframe {
+  width: 80%;
+  height: 80%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center
+}
+
+label[for="answer"], #result {
+  color: white;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 50%;
+  border: none;
+  outline: none;
+}
+
+button{
+  width: 50%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+#result {
+  padding: 10px
+}

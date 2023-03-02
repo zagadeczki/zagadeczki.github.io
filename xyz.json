@@ -1,0 +1,39 @@
+{
+    "koza": {
+      "answer": "ekipa",
+      "page": "page2.html"
+    },
+    "jak": {
+      "answer": "owca",
+      "page": "page3.html"
+    },
+    "gdy": {
+      "answer": "świeci słońce",
+      "page": "page4.html"
+    },
+    "ryt": {
+      "answer": "malować",
+      "page": "page5.html"
+    },
+    "myt": {
+      "answer": "myć",
+      "page": "page6.html"
+    },
+    "rozważny": {
+      "answer": "rozsądny",
+      "page": "page7.html"
+    },
+    "assny": {
+      "answer": "asystent",
+      "page": "page8.html"
+    },
+    "geter": {
+        "answer": "costam",
+        "page": "page9.html"
+      },
+    "ser": {
+        "answer": "niewiem",
+        "page": "page10.html"
+    }
+  }
+  
